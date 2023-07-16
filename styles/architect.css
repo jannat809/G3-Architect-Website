@@ -8,7 +8,8 @@
 }
 /* header styles */
 header{
-    background-color:rgba(255, 144, 14, 0.10);;
+    background-color:rgba(255, 144, 14, 0.10);
+    padding:50px 150px ;
 }
 nav{
     display: flex;
@@ -52,6 +53,37 @@ nav li a {
 .btn-primary{
     border-radius: 8px;
     background: #FF900E;
-    width: 180px;
-    height: 64px;
+    color: #FFFF;
+    padding: 20PX 25PX;
+    font-size: 1.25rem;
+    font-weight: 600;
+    cursor: pointer;
+    border: 0;
+}
+.banner img{
+    width: 100%;
+    margin-top: 20px;
+}
+/* responsive media query */
+/* mobile devices */
+@media screen and (max-width:576px) {
+    header{
+        padding: 20px;
+    }
+    nav {
+      flex-direction: column;
+    }
+    .banner-title{
+        font-size: 3.5rem;
+    }
+    
+}
+/* tablet or medium devices */
+@media screen and (min-width:576px)  and (max-width:960px){
+    nav {
+        flex-direction: column;
+      }
+      header{
+        padding: 50px;
+    }
 }
